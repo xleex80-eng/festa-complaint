@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; font-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>청사 불편민원 관리</title>
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<header class="top">
+  <h1>청사 불편민원 관리 <small class="demo-tag">체험판</small></h1>
+  <nav role="tablist" aria-label="메뉴">
+    <button class="tab" role="tab" data-tab="entry">접수</button>
+    <button class="tab" role="tab" data-tab="list">대장 <span id="pendingBadge" class="badge-count" hidden></span></button>
+    <button class="tab" role="tab" data-tab="stats">통계</button>
+    <button class="tab" role="tab" data-tab="data">가져오기·내보내기</button>
+  </nav>
+</header>
+<div class="notice demo" id="demoNotice">체험판입니다. 화면의 민원·이름·연락처는 모두 지어낸 예시 자료이며, 입력한 내용은 이 브라우저에만 저장되고 어디로도 전송되지 않습니다.</div>
+<div id="backupNotice" class="notice warn" hidden></div>
+<main>
+  <section id="tab-entry" class="panel" hidden></section>
+  <section id="tab-list" class="panel" hidden></section>
+  <section id="tab-stats" class="panel" hidden></section>
+  <section id="tab-data" class="panel" hidden></section>
+</main>
+<dialog id="editDialog" aria-label="민원 수정"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="vizTip" hidden></div>
+<footer class="foot">외부 통신 없음 · 데이터는 이 PC의 이 브라우저에만 저장됩니다.</footer>
+<script>/*__EXCELJS__*/</script>
+<script>/*__CLASS__*/</script>
+<script>/*__VIZ__*/</script>
+<script>/*__DEMO__*/</script>
+<script>/*__APP__*/</script>
+</body>
+</html>
